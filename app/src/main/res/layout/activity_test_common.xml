@@ -9,14 +9,11 @@
     <FrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_400dp"
-        android:layout_marginLeft="@dimen/dimen_10dp"
-        android:layout_marginRight="@dimen/dimen_10dp">
+        android:layout_height="@dimen/dimen_400dp">
 
         <com.hejunlin.superindicatorlibray.LoopViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/dimen_25dp"
             android:layout_height="@dimen/dimen_400dp"/>
 
         <FrameLayout
