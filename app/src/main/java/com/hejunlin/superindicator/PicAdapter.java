@@ -74,10 +74,14 @@ public class PicAdapter extends PagerAdapter{
         TextView textView = (TextView)view.findViewById(R.id.image_desc);
         textView.setText(TextIds[position]);
         imageView.setImageResource(ResIds[position]);
-        Bitmap image = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
-        Bitmap newimage = getRoundCornerImage(image,50);
-        ImageView imageView2 = new ImageView(view.getContext());
-        imageView2.setImageBitmap(newimage);
+
+//        Bitmap image = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
+//        Bitmap newimage = getRoundCornerImage(image,50);
+//        ImageView imageView2 = new ImageView(view.getContext());
+//        imageView2.setImageBitmap(newimage);
+
+
+
         container.addView(view);
         return view;
     }
