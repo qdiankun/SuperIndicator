@@ -2,6 +2,7 @@ package com.hejunlin.superindicator;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -81,6 +82,9 @@ public class PicAdapter extends PagerAdapter{
 //        imageView2.setImageBitmap(newimage);
 
 
+//        Bitmap bitmap = BitmapFactory.decodeResource(container.getContext().getResources(), ResIds[position]);
+//        Bitmap roundBitmap = getRoundCornerImage(bitmap, 50);
+//        imageView.setImageBitmap(roundBitmap);
 
         container.addView(view);
         return view;

@@ -6,27 +6,52 @@
     tools:context="com.hejunlin.superindicator.TestMainActivity">
 
     <Button
+        android:id="@+id/bt_scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bt_scroll"
         android:layout_marginTop="@dimen/dimen_40dp"
-        android:textAllCaps="false"
-        android:text="@string/scroll_text"/>
+        android:text="@string/scroll_text"
+        android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/bt_common"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bt_common"
-        android:textAllCaps="false"
-        android:layout_marginTop="@dimen/dimen_180dp"
-        android:text="@string/common_text"/>
+        android:layout_below="@id/bt_scroll"
+        android:text="@string/common_text"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bt_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_common"
+        android:text="@string/net_text"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bt_test_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_net"
+        android:text="@string/enlarge_image_text"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/bt_test_anim_interpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_test_anim"
+        android:text="@string/reduce_image_text"
+        android:textAllCaps="false" />
 
 
     <include
-        android:layout_marginTop="@dimen/dimen_25dp"
+        layout="@layout/navigation_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        layout="@layout/navigation_header" />
+        android:layout_marginTop="@dimen/dimen_25dp" />
 
 
 </RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_400dp">
+
+        <com.hejunlin.superindicatorlibray.LoopViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_400dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/looper_bottom_bg">
+
+            <com.hejunlin.superindicatorlibray.CircleIndicator
+                android:id="@id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginRight="@dimen/dimen_14dp"
+                app:ci_drawable="@drawable/m_store_view_icon_orange"
+                app:ci_drawable_unselected="@drawable/m_store_view_icon_gray"
+                app:ci_gravity="center"
+                app:ci_height="11dp"
+                app:ci_margin="5dp"
+                app:ci_width="11dp"
+                app:ci_orientation="horizontal"
+                app:ci_animator_reverse="@animator/scale_in_alpha"
+                />
+
+            <!--<com.hejunlin.superindicatorlibray.CircleIndicator
+                android:id="@id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/dimen_14dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:ci_drawable="@drawable/m_store_view_icon_orange"
+                app:ci_drawable_unselected="@drawable/m_store_view_icon_gray"
+                app:ci_height="12dp"
+                app:ci_margin="5dp"
+                app:ci_width="12dp" />-->
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

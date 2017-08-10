@@ -8,5 +8,8 @@
     <string name="e_name">灭罪师</string>
 
     <string name="common_text">测试普通View轮播</string>
+    <string name="net_text">测试网络普通View轮播</string>
     <string name="scroll_text">测试ScrollView轮播</string>
+    <string name="enlarge_image_text">放大图片</string>
+    <string name="reduce_image_text">缩小图片</string>
 </resources>
